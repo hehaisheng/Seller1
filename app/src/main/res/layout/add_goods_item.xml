@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="42dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:gravity="center_vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_height="35dp"
+        android:layout_width="match_parent"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="3dp"
+        app:cardPreventCornerOverlap="true"
+        >
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+            <TextView
+                android:id="@+id/add_list_goods_name"
+                android:layout_width="0dp"
+                app:layout_widthPercent="75%w"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:gravity="center_vertical"
+                android:text="猪瘦肉"
+                android:textColor="@color/itemBackground"
+                app:layout_textSizePercent="4%w"
+                app:layout_paddingLeftPercent="2%w"
+                app:layout_paddingTopPercent="2%w"
+                app:layout_paddingBottomPercent="2%w"
+
+                />
+
+
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+
+
+
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>
+

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/fixture_name"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="自定义商店名:"
+        android:textColor="@color/text_common"
+        android:textSize="15sp"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        />
+    <EditText
+        android:id="@+id/fixture_name_edit"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:hint="好猪肉"
+        android:layout_alignTop="@+id/fixture_name"
+        android:layout_toRightOf="@id/fixture_name"
+        android:textColorHint="@color/itemBackground"
+        android:background="@null"
+        android:paddingLeft="5dp"
+        android:textSize="15sp"
+        android:textColor="@color/text_common"
+        />
+
+    <TextView
+        android:id="@+id/fixture_name_cut"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/fixture_name_edit"
+        android:background="@color/colorLineItem"
+        />
+
+
+    <TextView
+        android:id="@+id/fixture_name_type1"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="商店类型:"
+        android:textColor="@color/text_common"
+        android:textSize="15sp"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/fixture_name_cut"
+        />
+
+    <TextView
+        android:id="@+id/fixture_name_type"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="肉类"
+        android:textColor="@color/itemBackground"
+        android:textSize="15sp"
+        android:padding="5dp"
+        android:layout_alignTop="@+id/fixture_name_type1"
+        android:layout_toRightOf="@+id/fixture_name_type1"
+        />
+
+    <Button
+        android:id="@+id/fixture_name_type_button"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/fixture_name_type"
+        android:layout_marginRight="15dp"
+        android:text="选择"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/shape_back"
+        android:textSize="12sp"
+        android:padding="1dp"
+
+        />
+    <TextView
+        android:id="@+id/fixture_name_cut3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/fixture_name_type"
+        android:background="@color/colorLineItem"
+        />
+
+    <TextView
+        android:id="@+id/fixture_post_image"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="上传店铺图片"
+        android:textColor="@color/text_common"
+        android:textSize="15sp"
+        android:padding="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/fixture_name_cut3"
+        />
+
+    <TextView
+        android:id="@+id/fixture_name_cut4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/fixture_post_image"
+        android:background="@color/colorLineItem"
+        />
+
+    <ImageView
+        android:id="@+id/fixture_shop_name"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"
+        android:layout_below="@+id/fixture_name_cut4"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/back"/>
+
+    <Button
+        android:id="@+id/fixture_name_button"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/fixture_shop_name"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/shape_back"
+        android:layout_centerHorizontal="true"
+        android:text="确认"
+        android:textColor="@color/colorWhite"
+        android:textSize="15sp"
+        android:padding="5dp"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/add_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="40%h"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:background="@color/itemBackground">
+
+    </android.support.v7.widget.RecyclerView>
+
+</com.zhy.android.percent.support.PercentRelativeLayout>
